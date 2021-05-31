@@ -10,9 +10,8 @@ a {
 
 body {
     background-color: #fff;
-    /* font-family: Lato, sans-serif; */
     color: #333;
-    font-size: 18px;
+    font-size: 1.2em;
     line-height: 135%;
     margin: 0;
     min-height: 100%;
@@ -21,8 +20,8 @@ body {
 /* Navigation bar */
 .navigation-bar {
   position: relative;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 1.5em;
+  padding-bottom: 1em;
   background-color: #fff;
   box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.06);
   font-family: 'Cabin Sketch';
@@ -49,8 +48,7 @@ body {
 
 .site-name {
     display: block;
-    margin-top: 11px;
-    font-size: 24px;
+    font-size: 1.5em;
     line-height: 100%;
     position: relative;
     float: left;
@@ -64,10 +62,10 @@ body {
 }
 
 .navigation-link {
-    margin-left: 25px;
-    padding: 15px 0px;
+    margin-left: 1.5em;
+    padding: 1em 0px;
     color: #aaa;
-    font-size: 14px;
+    font-size: 0.9em;
     max-width: 940px;
     display: block;
     text-transform: uppercase;
@@ -93,8 +91,7 @@ body {
 /* Content */
 
 .content-wrapper {
-    padding-top: 30px;
-    padding-bottom: 15px;
+    padding: 1em 0;
 }
 
 .content-col {
@@ -106,8 +103,6 @@ body {
 
 .blog-page-image {
     height: 300px;
-    /* border-top-left-radius: 5px; */
-    /* border-top-right-radius: 5px; */
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -116,7 +111,6 @@ body {
 .article-container {
   width: 400px;
   height: 400px;
-  /* border-radius: 10px; */
   float: left;
   position: relative;
   overflow: hidden;
@@ -125,7 +119,6 @@ body {
 .article-image {
   width: 400px;
   height: 400px;
-  /* border-radius: 10px; */
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -169,40 +162,30 @@ body {
 }
 
 .post-content {
-    padding: 20px;
+    padding: 1em 0;
 }
 
 h1 {
-    margin-top: 0px;
-    margin-bottom: 15px;
-    font-size: 35px;
-    line-height: 40px;
     font-weight: 400;
-    font-size: 2em;
-    margin: .67em 0;
     font-family: 'Cabin Sketch';
 }
 
 .details-wrapper {
-    margin-top: 8px;
-    margin-bottom: 8px;
 }
 
 .post-info {
     display: inline-block;
-    margin-right: 8px;
     color: #aaa;
-    font-size: 10px;
-    line-height: 18px;
-    letter-spacing: 1px;
+    font-size: 0.6em;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
 }
 
 .grey-rule {
-    width: 70px;
+    width: 4em;
     height: 1px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
     background-color: #c7c7c7;
 }
 
@@ -220,44 +203,10 @@ h1 {
 }
 
 p {
-    margin-top: 0px;
-    margin-bottom: 20px;
-    /* font-family: Lato, sans-serif; */
     line-height: 200%;
 }
 
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-
-h2 {
-    margin-top: 30px;
-    margin-bottom: 20px;
-    font-size: 25px;
-    line-height: 30px;
-    font-weight: 400;
-    font-family: 'Cabin Sketch';
-}
-
-h2 {
-    display: block;
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-}
-
 h3 {
-    margin-top: 30px;
-    margin-bottom: 20px;
-    font-size: 21px;
-    line-height: 30px;
     font-weight: 400;
     font-family: 'Cabin Sketch';
 }
@@ -266,43 +215,48 @@ h3 {
     border-radius: 3px;
     background-color: #888;
     display: inline-block;
-    padding: 9px 15px;
+    padding: 0.5em 0.7em;
     color: white;
     border: 0;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 0.9em;
+    line-height: 1.25em;
     text-decoration: none;
     text-align: center;
     cursor: pointer;
 }
 
-img {
+.post-content img {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   display: block;
-  margin-top: 20px;
-  margin-bottom: 15px;
+  margin: 1em 0;
   max-height: 600px;
 }
 
 .image_title {
   text-align: center;
   text-decoration: underline;
-  margin-bottom: 5px;
+}
+
+.social-icons {
+  text-align: center;
 }
 
 .social-icon img {
-  width: 30px;
-  float: left;
-  margin-right: 15px;
+  width: 1.7em;
+  margin-right: 0.7em;
+}
+
+.footer {
+  background-color: #f5f5f5;
+  padding-top: 1.7em;
+  box-shadow: 0px -1px 0 0 rgb(0, 0, 0, 0.06);
 }
 
 .copyright {
-  font-size: 14px;
+  font-size: 0.7em;
   color: #aaa;
-  margin-top: 20px;
-  box-shadow: 0px -1px 0 0 rgb(0, 0, 0, 0.06);
-  padding: 20px 0px;
+  padding: 1em 0px;
   text-align: center;
 }
