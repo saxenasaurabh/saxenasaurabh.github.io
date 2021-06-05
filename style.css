@@ -227,10 +227,8 @@ h3 {
 
 .post-content img {
   max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
   display: block;
-  margin: 1em 0;
+  margin: 1em auto;
   max-height: 600px;
 }
 
