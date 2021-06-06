@@ -31,6 +31,12 @@ h1 {
   line-height: 120%;
 }
 
+h4.day-header {
+  padding: 1em 0;
+  text-align: center;
+  background: aliceblue;
+}
+
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -202,7 +208,7 @@ h1 {
 }
 
 p {
-    line-height: 200%;
+    line-height: 1.7;
 }
 
 .back-button {
@@ -217,6 +223,10 @@ p {
     text-decoration: none;
     text-align: center;
     cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: #777;
 }
 
 .post-content img {
