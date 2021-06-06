@@ -27,6 +27,10 @@ body {
   font-family: 'Cabin Sketch';
 }
 
+h1 {
+  line-height: 120%;
+}
+
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -165,18 +169,13 @@ body {
     padding: 1em 0;
 }
 
-h1 {
-    font-weight: 400;
-    font-family: 'Cabin Sketch';
-}
-
 .details-wrapper {
 }
 
 .post-info {
     display: inline-block;
     color: #aaa;
-    font-size: 0.6em;
+    font-size: 60%;
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
@@ -206,11 +205,6 @@ p {
     line-height: 200%;
 }
 
-h3 {
-    font-weight: 400;
-    font-family: 'Cabin Sketch';
-}
-
 .back-button {
     border-radius: 3px;
     background-color: #888;
@@ -228,13 +222,8 @@ h3 {
 .post-content img {
   max-width: 100%;
   display: block;
-  margin: 1em auto;
+  margin: 1.5em auto;
   max-height: 600px;
-}
-
-.image_title {
-  text-align: center;
-  text-decoration: underline;
 }
 
 .social-icons {
