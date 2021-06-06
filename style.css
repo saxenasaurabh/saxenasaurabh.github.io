@@ -59,7 +59,7 @@ body {
 
 .site-name {
     display: block;
-    font-size: 1.5em;
+    font-size: 1.3em;
     line-height: 100%;
     position: relative;
     float: left;
@@ -136,7 +136,7 @@ body {
   background-repeat: no-repeat;
   cursor: pointer;
   transition: height 0.2s ease-out;
-  filter: brightness(0.75);
+  filter: brightness(0.85);
 }
 
 .article-image:hover {
