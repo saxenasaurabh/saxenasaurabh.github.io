@@ -31,6 +31,7 @@ body {
 .blog-title {
   line-height: 120%;
   font-weight: 300;
+  margin: 0.3em 0;
 }
 
 .day-header {
@@ -191,8 +192,7 @@ body {
 .grey-rule {
     width: 4em;
     height: 1px;
-    margin-top: 0.7em;
-    margin-bottom: 0.7em;
+    margin-top: 0.5em;
     background-color: #c7c7c7;
 }
 
