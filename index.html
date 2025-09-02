@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<!--Template inspired by <a href="https://github.com/alshedivat/al-folio">al-folio</a>-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saurabh Saxena - Homepage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+      .btn {
+        border: 1px solid black;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: .25rem;
+        padding-bottom: .25rem;
+        margin-left: 0;
+        border-radius: .125rem;
+        text-transform: uppercase;
+        word-wrap: break-word;
+        white-space: normal;
+        font-size: 0.64rem;
+      }
+      em.highlight-author {
+        border-bottom: 1px solid;
+        font-style: normal;
+      }
+    </style>
+</head>
+<body class="bg-white font-light font-sans">
+
+    <!-- Main Container -->
+    <div class="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+
+        <!-- Header Section -->
+        <header class="flex flex-col sm:flex-row items-start sm:items-center justify-between">
+            <div>
+                <h1 class="text-4xl">Saurabh Saxena</h1>
+                <p class="mt-2 text-lg">Research @ Google DeepMind</p>
+            </div>
+            <nav class="mt-4 sm:mt-0">
+                <ul class="flex space-x-6 text-lg">
+                    <li><a href="https://scholar.google.ca/citations?user=WTz38osAAAAJ&hl=en" target="_blank" class="hover:text-blue-700">Google Scholar</a></li>
+                    <li><a href="https://github.com/saxenasaurabh" target="_blank" class="hover:text-blue-700">GitHub</a></li>
+                    <li><a href="https://twitter.com/srbhsxn" target="_blank" class="hover:text-blue-700">Twitter</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- About Me Section -->
+
+        <!-- <h2 class="text-2xl border-b pb-2 mt-16">About Me</h2> -->
+        <section id="about" class="mt-12 flex flex-col md:flex-row items-start gap-8">
+            <div class="w-full md:w-1/4 flex-shrink-0">
+                <img src="assets/saurabhsaxena.jpg" alt="Saurabh Saxena" class="rounded-lg shadow-md w-full">
+            </div>
+            <div class="prose prose-lg">
+                <!-- <h2 class="text-2xl border-b pb-2 mb-4">About Me</h2> -->
+                <p>
+                    I am a Staff Research Engineer at Google DeepMind, where I lead research at the intersection of computer vision and generative modeling. My work in generative AI explores the potential of diffusion models for creating controllable image and video content (aka world models). On the scene understanding front, my research is centered on methods for recovering intrinsic properties of a scene, such as its geometry and motion, as well as estimating camera parameters. Prior to this, I played a pivotal role in building and launching TensorFlow 2, leading foundational aspects like automatic differentiation, control flow, and eager execution.
+                </p>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section id="news" class="mt-16">
+            <h2 class="text-2xl border-b pb-2 mb-6">News</h2>
+            <ul class="space-y-4">
+                <li class="flex items-start">
+                    <span class="w-28 flex-shrink-0">June 2025</span>
+                    <span class="">Our paper on motion segmentation for robust SfM was accepted at ICCV 2025.</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Selected Publications Section -->
+        <section id="publications" class="mt-16">
+            <h2 class="text-2xl text-gray-900 border-b pb-2 mb-6">Selected Publications</h2>
+            <div class="space-y-8">
+                <!-- Publication Item 1 -->
+                <div class="flex flex-col sm:flex-row gap-6">
+                    <div class="w-full sm:w-48 sm:flex-shrink-0">
+                        <video width="200" height="150" class="rounded-lg shadow-sm w-full h-auto" autoplay loop muted><source src="assets/romo.mp4" type="video/mp4"/></video>
+                    </div>
+                    <div>
+                        <p class="text-xl">RoMo: Robust Motion Segmentation Improves Structure from Motion</p>
+                        <p class="text-gray-600 mt-1">Lily Goli*, Sara Sabour*, Mark Matthews, Marcus Brubaker, Dmitry Lagun, Alec Jacobson, David J. Fleet, <em class="highlight-author">Saurabh Saxena</em><sup>&dagger;</sup>, Andrea Tagliasacchi<sup>&dagger;</sup></p>
+                        <p class="text-gray-600 italic mt-1">ICCV 2025</p>
+                        <div class="links">
+                          <a class="btn hover:text-blue-700 hover:border-blue-700" href="https://arxiv.org/abs/2411.18650">Paper</a>
+                          <a href="https://romosfm.github.io" class="btn hover:text-blue-700 hover:border-blue-700">Website</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-6">
+                    <div class="w-full sm:w-48 sm:flex-shrink-0">
+                        <video width="200" height="150" class="rounded-lg shadow-sm w-full h-auto" autoplay loop muted><source src="assets/hifi.mp4" type="video/mp4"/></video>
+                    </div>
+                    <div>
+                        <p class="text-xl">High-Resolution Frame Interpolation with Patch-based Cascaded Diffusion</p>
+                        <p class="text-gray-600 mt-1">Junhwa Hur, Charles Herrmann, <em class="highlight-author">Saurabh Saxena</em>, Janne Kontkanen, Wei-Sheng Lai, Yichang Shih, Michael Rubinstein, David J. Fleet, Deqing Sun</p>
+                        <p class="text-gray-600 italic mt-1">AAAI 2025</p>
+                        <div class="links">
+                          <a class="btn hover:text-blue-700 hover:border-blue-700" href="https://arxiv.org/abs/2410.11838">Paper</a>
+                          <a href="https://hifi-diffusion.github.io/" class="btn hover:text-blue-700 hover:border-blue-700">Website</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-6">
+                    <div class="w-full sm:w-48 sm:flex-shrink-0">
+                        <video width="200" height="150" class="rounded-lg shadow-sm w-full h-auto" autoplay loop muted><source src="assets/4dim.mp4" type="video/mp4"/></video>
+                    </div>
+                    <div>
+                        <p class="text-xl">Controlling space and time with diffusion models</p>
+                        <p class="text-gray-600 mt-1">Daniel Watson*, <em class="highlight-author">Saurabh Saxena</em>*, Lala Li* , Andrea Tagliasacchi, David J Fleet</p>
+                        <p class="text-gray-600 italic mt-1">ICLR 2025</p>
+                        <div class="links">
+                          <a class="btn hover:text-blue-700 hover:border-blue-700" href="https://arxiv.org/abs/2407.07860">Paper</a>
+                          <a href="https://4d-diffusion.github.io/" class="btn hover:text-blue-700 hover:border-blue-700">Website</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-6">
+                    <div class="w-full sm:w-48 sm:flex-shrink-0">
+                        <video width="200" height="150" class="rounded-lg shadow-sm w-full h-auto" autoplay loop muted><source src="assets/nerfiller.mp4" type="video/mp4"/></video>
+                    </div>
+                    <div>
+                        <p class="text-xl">Nerfiller: Completing scenes via generative 3d inpainting</p>
+                        <p class="text-gray-600 mt-1">Ethan Weber, Aleksander Holynski, Varun Jampani, <em class="highlight-author">Saurabh Saxena</em>, Noah Snavely, Abhishek Kar, Angjoo Kanazawa</p>
+                        <p class="text-gray-600 italic mt-1">CVPR 2024</p>
+                        <div class="links">
+                          <a class="btn hover:text-blue-700 hover:border-blue-700" href="https://openaccess.thecvf.com/content/CVPR2024/papers/Weber_NeRFiller_Completing_Scenes_via_Generative_3D_Inpainting_CVPR_2024_paper.pdf">Paper</a>
+                          <a href="https://ethanweber.me/nerfiller/" class="btn hover:text-blue-700 hover:border-blue-700">Website</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-6">
+                    <div class="w-full sm:w-48 sm:flex-shrink-0">
+                        <video width="200" height="150" class="rounded-lg shadow-sm w-full h-auto" autoplay loop muted><source src="assets/dmd.mp4" type="video/mp4"/></video>
+                    </div>
+                    <div>
+                        <p class="text-xl">Zero-shot metric depth with a field-of-view conditioned diffusion model</p>
+                        <p class="text-gray-600 mt-1"><em class="highlight-author">Saurabh Saxena</em>, Junhwa Hur, Charles Herrmann, Deqing Sun, David J Fleet</p>
+                        <p class="text-gray-600 italic mt-1">ECCV 2024 Workshop on Wild 3D: 3D Modeling, Reconstruction, and Generation in the Wild</p>
+                        <div class="links">
+                          <a class="btn hover:text-blue-700 hover:border-blue-700" href="https://openreview.net/forum?id=nWrjxMaAnT">Paper</a>
+                          <a href="https://diffusion-vision.github.io/dmd/" class="btn hover:text-blue-700 hover:border-blue-700">Website</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-6">
+                    <div class="w-full sm:w-48 sm:flex-shrink-0">
+                        <video width="200" height="150" class="rounded-lg shadow-sm w-full h-auto" autoplay loop muted><source src="assets/ddvm.mp4" type="video/mp4"/></video>
+                    </div>
+                    <div>
+                        <p class="text-xl">The surprising effectiveness of diffusion models for optical flow and monocular depth estimation</p>
+                        <p class="text-gray-600 mt-1"><em class="highlight-author">Saurabh Saxena</em>, Charles Herrmann, Junhwa Hur, Abhishek Kar, Mohammad Norouzi, Deqing Sun, David J Fleet</p>
+                        <p class="text-gray-600 italic mt-1">NeurIPS 2023 ORAL</p>
+                        <div class="links">
+                          <a class="btn hover:text-blue-700 hover:border-blue-700" href="https://openreview.net/forum?id=jDIlzSU8wJ&noteId=5iJanTFShC">Paper</a>
+                          <a href="https://diffusion-vision.github.io/" class="btn hover:text-blue-700 hover:border-blue-700">Website</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-6">
+                    <div class="w-full sm:w-48 sm:flex-shrink-0">
+                        <video width="200" height="150" class="rounded-lg shadow-sm w-full h-auto" autoplay loop muted><source src="assets/p2s_panoptic.mp4" type="video/mp4"/></video>
+                    </div>
+                    <div>
+                        <p class="text-xl">A generalist framework for panoptic segmentation of images and videos</p>
+                        <p class="text-gray-600 mt-1">Ting Chen, Lala Li, <em class="highlight-author">Saurabh Saxena</em>, Geoffrey Hinton, David J Fleet</p>
+                        <p class="text-gray-600 italic mt-1">ICCV 2023</p>
+                        <div class="links">
+                          <a class="btn hover:text-blue-700 hover:border-blue-700" href="https://openaccess.thecvf.com/content/ICCV2023/papers/Chen_A_Generalist_Framework_for_Panoptic_Segmentation_of_Images_and_Videos_ICCV_2023_paper.pdf">Paper</a>
+                          <a href="https://github.com/google-research/pix2seq" class="btn hover:text-blue-700 hover:border-blue-700">Website</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-6">
+                    <div class="w-full sm:w-48 sm:flex-shrink-0">
+                        <video width="200" height="150" class="rounded-lg shadow-sm w-full h-auto" autoplay loop muted><source src="assets/p2s_multitask.mp4" type="video/mp4"/></video>
+                    </div>
+                    <div>
+                        <p class="text-xl">A unified sequence interface for vision tasks</p>
+                        <p class="text-gray-600 mt-1">Ting Chen*, <em class="highlight-author">Saurabh Saxena</em>*, Lala Li*, Tsung-Yi Lin, David J Fleet, Geoffrey E Hinton</p>
+                        <p class="text-gray-600 italic mt-1">NeurIPS 2022</p>
+                        <div class="links">
+                          <a class="btn hover:text-blue-700 hover:border-blue-700" href="https://openreview.net/forum?id=tjFaqsSK2I3">Paper</a>
+                          <a href="https://github.com/google-research/pix2seq" class="btn hover:text-blue-700 hover:border-blue-700">Website</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-6">
+                    <div class="w-full sm:w-48 sm:flex-shrink-0">
+                        <video width="200" height="150" class="rounded-lg shadow-sm w-full h-auto" autoplay loop muted><source src="assets/imagen.mp4" type="video/mp4"/></video>
+                    </div>
+                    <div>
+                        <p class="text-xl">Photorealistic text-to-image diffusion models with deep language understanding</p>
+                        <p class="text-gray-600 mt-1">Chitwan Saharia, William Chan, <em class="highlight-author">Saurabh Saxena</em>, Lala Li, Jay Whang, Emily L Denton, Kamyar Ghasemipour, Raphael Gontijo Lopes, Burcu Karagol Ayan, Tim Salimans, Jonathan Ho, David J Fleet, Mohammad Norouzi</p>
+                        <p class="text-gray-600 italic mt-1">NeurIPS 2022 SPOTLIGHT</p>
+                        <div class="links">
+                          <a class="btn hover:text-blue-700 hover:border-blue-700" href="https://openreview.net/forum?id=08Yk-n5l2Al">Paper</a>
+                          <a href="https://imagen.research.google/" class="btn hover:text-blue-700 hover:border-blue-700">Website</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-6">
+                    <div class="w-full sm:w-48 sm:flex-shrink-0">
+                        <video width="200" height="150" class="rounded-lg shadow-sm w-full h-auto" autoplay loop muted><source src="assets/pix2seq.mp4" type="video/mp4"/></video>
+                    </div>
+                    <div>
+                        <p class="text-xl">Pix2seq: A language modeling framework for object detection</p>
+                        <p class="text-gray-600 mt-1">Ting Chen, <em class="highlight-author">Saurabh Saxena</em>, Lala Li, David J Fleet, Geoffrey Hinton</p>
+                        <p class="text-gray-600 italic mt-1">ICLR 2022</p>
+                        <div class="links">
+                          <a class="btn hover:text-blue-700 hover:border-blue-700" href="https://openreview.net/forum?id=e42KbIw6Wb">Paper</a>
+                          <a href="https://github.com/google-research/pix2seq" class="btn hover:text-blue-700 hover:border-blue-700">Website</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-6">
+                    <div class="w-full sm:w-48 sm:flex-shrink-0">
+                        <video width="200" height="150" class="rounded-lg shadow-sm w-full h-auto" autoplay loop muted><source src="assets/evolution.mp4" type="video/mp4"/></video>
+                    </div>
+                    <div>
+                        <p class="text-xl">Large-scale evolution of image classifiers</p>
+                        <p class="text-gray-600 mt-1">Esteban Real, Sherry Moore, Andrew Selle, <em class="highlight-author">Saurabh Saxena</em>, Yutaka Leon Suematsu, Jie Tan, Quoc V Le, Alexey Kurakin</p>
+                        <p class="text-gray-600 italic mt-1">ICML 2017</p>
+                        <div class="links">
+                          <a class="btn hover:text-blue-700 hover:border-blue-700" href="https://proceedings.mlr.press/v70/real17a/real17a.pdf">Paper</a>
+                          <!-- <a href="https://github.com/google-research/pix2seq" class="btn hover:text-blue-700 hover:border-blue-700">Website</a> -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center mt-16 pt-8 border-t">
+
+        </footer>
+
+    </div>
+
+</body>
+</html>
